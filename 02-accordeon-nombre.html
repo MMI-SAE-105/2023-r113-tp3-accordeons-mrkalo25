@@ -5,20 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
-    <div class="accordeon" x-data="{open:false}">
+    <div class="accordeon" x-data="{ open:false }">
       <section>
-        <button>bouton 1</button>
+        <button @click="open = ! open">bouton 1</button>
+        <span x-show="open" x-transition.scale.80>
+          Hello 👋
+        </span>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae pariatur nulla reprehenderit modi quibusdam, dignissimos natus. Illum omnis voluptatum sunt enim, accusamus et cumque repudiandae iste eligendi alias aperiam incidunt!</p>
       </section>
       <section>
-        <button>bouton 2</button>
+        <button @click="open = ! open">bouton 2</button>
+        <span x-show="open" x-transition.scale.80>
+          Hello 👋
+        </span>
         <p>Accusamus at omnis, laudantium reiciendis ab atque non nemo dolorum sapiente aliquam deserunt dolorem corporis nisi aut quidem eveniet fuga repudiandae exercitationem numquam! Quis dolores veritatis quisquam blanditiis! Asperiores, reiciendis!</p>
       </section>
       <section>
-        <button>bouton 3</button>
+        <button @click="open = ! open">bouton 3</button>
+        <span x-show="open" x-transition.scale.70>
+          Hello 👋
+        </span>
         <p>Suscipit adipisci a unde soluta debitis distinctio, sequi qui reprehenderit ut quos, non accusantium sapiente nobis mollitia aperiam ullam corporis sunt sed, nulla cumque ducimus architecto possimus totam quis. Ad?</p>
       </section>
     </div>
