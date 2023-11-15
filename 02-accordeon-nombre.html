@@ -12,24 +12,15 @@
     <div class="accordeon" x-data="{ open:false }">
       <section>
         <button @click="open = ! open">bouton 1</button>
-        <span x-show="open" x-transition.scale.80>
-          Hello 👋
-        </span>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae pariatur nulla reprehenderit modi quibusdam, dignissimos natus. Illum omnis voluptatum sunt enim, accusamus et cumque repudiandae iste eligendi alias aperiam incidunt!</p>
+        <p x-show="open" x-transition.scale.0.origin.top.left>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae pariatur nulla reprehenderit modi quibusdam, dignissimos natus. Illum omnis voluptatum sunt enim, accusamus et cumque repudiandae iste eligendi alias aperiam incidunt!</p>
       </section>
       <section>
         <button @click="open = ! open">bouton 2</button>
-        <span x-show="open" x-transition.scale.80>
-          Hello 👋
-        </span>
-        <p>Accusamus at omnis, laudantium reiciendis ab atque non nemo dolorum sapiente aliquam deserunt dolorem corporis nisi aut quidem eveniet fuga repudiandae exercitationem numquam! Quis dolores veritatis quisquam blanditiis! Asperiores, reiciendis!</p>
+        <p x-show="open" x-transition.scale.0.origin.top.left>Accusamus at omnis, laudantium reiciendis ab atque non nemo dolorum sapiente aliquam deserunt dolorem corporis nisi aut quidem eveniet fuga repudiandae exercitationem numquam! Quis dolores veritatis quisquam blanditiis! Asperiores, reiciendis!</p>
       </section>
       <section>
         <button @click="open = ! open">bouton 3</button>
-        <span x-show="open" x-transition.scale.70>
-          Hello 👋
-        </span>
-        <p>Suscipit adipisci a unde soluta debitis distinctio, sequi qui reprehenderit ut quos, non accusantium sapiente nobis mollitia aperiam ullam corporis sunt sed, nulla cumque ducimus architecto possimus totam quis. Ad?</p>
+        <p x-show="open" x-transition.scale.0.origin.top.left>Suscipit adipisci a unde soluta debitis distinctio, sequi qui reprehenderit ut quos, non accusantium sapiente nobis mollitia aperiam ullam corporis sunt sed, nulla cumque ducimus architecto possimus totam quis. Ad?</p>
       </section>
     </div>
   </body>
