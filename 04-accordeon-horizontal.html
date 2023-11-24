@@ -73,20 +73,20 @@
   </style>
 </head>
 
-<body>
+<body x-data="{ open: 0 }">
   <h1>Accordéon horizontal</h1>
   <ul id="accordeon">
-    <li>
-      <figure>
+    <li :class="{actif : open === 1}">
+      <figure @click="open=1">
         <img src="https://picsum.photos/100?random=1" alt="" width="102">
-        <figcaption>
+        <figcaption >
           <h3>Lorem, ipsum dolor.</h3>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
         </figcaption>
       </figure>
     </li>
-    <li class="actif">
-      <figure>
+    <li :class="{actif : open === 2 }">
+      <figure @click="open=2">
         <img src="https://picsum.photos/100?random=2" alt="" width="102">
         <figcaption>
           <h3>Inventore, reiciendis incidunt.</h3>
@@ -94,8 +94,8 @@
         </figcaption>
       </figure>
     </li>
-    <li>
-      <figure>
+    <li :class="{actif : open === 3 }">
+      <figure @click="open=3">
         <img src="https://picsum.photos/100?random=3" alt="" width="102">
         <figcaption>
           <h3>Atque, est nobis?</h3>
