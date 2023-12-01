@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Accordéon horizontal</title>
+  <title>Horizontal accordion</title>
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
   <style>
@@ -74,14 +74,14 @@
 </head>
 
 <body x-data="{ open: 0 }">
-  <h1>Accordéon horizontal</h1>
+  <h1>Horizontal accordion</h1>
   <ul id="accordeon">
     <li :class="{actif : open === 1}">
       <figure @click="open=1">
         <img src="https://picsum.photos/100?random=1" alt="" width="102">
         <figcaption >
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <h3>First article</h3>
+          <p>Here is the first article</p>
         </figcaption>
       </figure>
     </li>
@@ -89,8 +89,8 @@
       <figure @click="open=2">
         <img src="https://picsum.photos/100?random=2" alt="" width="102">
         <figcaption>
-          <h3>Inventore, reiciendis incidunt.</h3>
-          <p>Quisquam similique quidem sequi maxime praesentium!</p>
+          <h3>Second article</h3>
+          <p>Here is the second article</p>
         </figcaption>
       </figure>
     </li>
@@ -98,8 +98,8 @@
       <figure @click="open=3">
         <img src="https://picsum.photos/100?random=3" alt="" width="102">
         <figcaption>
-          <h3>Atque, est nobis?</h3>
-          <p>Incidunt, atque inventore? Ipsa, optio nisi!</p>
+          <h3>Third article</h3>
+          <p>Here is the third article</p>
         </figcaption>
       </figure>
     </li>

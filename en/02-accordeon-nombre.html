@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
+    <title>Accordion memorising the open element by a number</title>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
-    <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+    <h1>Accordion memorising the open element by a number</h1>
     <div class="accordeon" x-data="{ open :0 }">
       <section>
-        <button @click="open = 1">bouton 1</button>
-        <p x-show="open===1" x-transition.scale.0.origin.top.left>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae pariatur nulla reprehenderit modi quibusdam, dignissimos natus. Illum omnis voluptatum sunt enim, accusamus et cumque repudiandae iste eligendi alias aperiam incidunt!</p>
+        <button @click="open = 1">button 1</button>
+        <p x-show="open===1" x-transition.scale.0.origin.top.left>This is an accordion with numbers</p>
       </section>
       <section>
-        <button @click="open=2">bouton 2</button>
-        <p x-show="open===2" x-transition.scale.0.origin.top.left>Accusamus at omnis, laudantium reiciendis ab atque non nemo dolorum sapiente aliquam deserunt dolorem corporis nisi aut quidem eveniet fuga repudiandae exercitationem numquam! Quis dolores veritatis quisquam blanditiis! Asperiores, reiciendis!</p>
+        <button @click="open=2">button 2</button>
+        <p x-show="open===2" x-transition.scale.0.origin.top.left>Now the second</p>
       </section>
       <section>
-        <button @click="open=3">bouton 3</button>
-        <p x-show="open===3" x-transition.scale.0.origin.top.left>Suscipit adipisci a unde soluta debitis distinctio, sequi qui reprehenderit ut quos, non accusantium sapiente nobis mollitia aperiam ullam corporis sunt sed, nulla cumque ducimus architecto possimus totam quis. Ad?</p>
+        <button @click="open=3">button 3</button>
+        <p x-show="open===3" x-transition.scale.0.origin.top.left>And a third accordion to finish</p>
       </section>
     </div>
   </body>

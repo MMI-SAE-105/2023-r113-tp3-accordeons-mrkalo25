@@ -4,24 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accordéon avec x-collapse</title>
+    <title>Accordion with x-collapse</title>
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
-    <h1>Accordéon avec <code>x-collapse</code></h1>
+    <h1>Accordion with <code>x-collapse</code></h1>
     <div class="accordeon">
       <section x-data="{ expanded: false }">
-        <button @click="expanded = ! expanded">bouton 1</button>
-        <p x-show="expanded" x-collapse.duration.1000ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sint mollitia voluptate delectus eveniet eligendi iusto assumenda fugiat? Sit, debitis aliquid. Fuga fugiat repellendus dolores tenetur dicta ratione, laborum voluptates?</p>
+        <button @click="expanded = ! expanded">button 1</button>
+        <p x-show="expanded" x-collapse.duration.1000ms>This accordion was made with collapse</p>
       </section>
       <section x-data="{ expanded: false }">
-        <button @click="expanded = ! expanded">bouton 2</button>
-        <p x-show="expanded" x-collapse.duration.1000ms>Blanditiis sequi aut maxime odio eaque rerum magni, natus nulla consequatur quae cumque praesentium incidunt earum provident nobis et dicta, maiores ad assumenda tempora, alias harum. Nihil libero ipsam suscipit.</p>
+        <button @click="expanded = ! expanded">button 2</button>
+        <p x-show="expanded" x-collapse.duration.1000ms>Here is the second accordion</p>
       </section>
       <section x-data="{ expanded: false }">
-        <button @click="expanded = ! expanded">bouton 3</button>
-        <p x-show="expanded" x-collapse.duration.1000ms>Odio placeat expedita similique velit quod culpa aliquid nam accusamus magnam facilis aliquam quaerat nesciunt ipsum, enim laboriosam voluptate? Excepturi expedita, vero eos dolor facere impedit culpa qui accusantium repellat?</p>
+        <button @click="expanded = ! expanded">button 3</button>
+        <p x-show="expanded" x-collapse.duration.1000ms>And finally the third accordion</p>
       </section>
     </div>
   </body>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>Onglets</title>
+    <title>Tabs</title>
 
     <style>
       #panneaux {
@@ -32,24 +32,24 @@
     </style>
   </head>
   <body x-data="{open:0}">
-    <h1>Onglets</h1>
+    <h1>Tabs</h1>
     <ul role="tablist">
-      <li role="tab" @click="open=1">Onglet 1</li>
-      <li role="tab" @click="open=2">Onglet 2</li>
-      <li role="tab" @click="open=3">Onglet 3</li>
+      <li role="tab" @click="open=1">Tab 1</li>
+      <li role="tab" @click="open=2">Tab 2</li>
+      <li role="tab" @click="open=3">Tab 3</li>
     </ul>
     <div id="panneaux">
       <div role="tabpanel" :class="{actif:open === 1,}">
-        <h1>Panneau 1</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab molestiae maiores in culpa natus sapiente velit asperiores ipsum temporibus magni illum, totam, quam obcaecati earum minus repudiandae voluptatum rerum?</p>
+        <h1>Panel 1</h1>
+        <p>This is panel 1</p>
       </div>
       <div role="tabpanel" :class="{actif:open === 2,}">
-        <h1>Panneau 2</h1>
-        <p>Vel dolor mollitia, commodi reiciendis quibusdam numquam provident quam vero ex, in sunt hic, officia doloremque. Omnis voluptatibus odio minus debitis neque necessitatibus architecto doloribus quaerat voluptate. Necessitatibus, nihil distinctio!</p>
+        <h1>Panel 2</h1>
+        <p>This is panel 2</p>
       </div>
       <div role="tabpanel" :class="{actif:open === 3,}">
-        <h1>Panneau 3</h1>
-        <p>Voluptatibus similique dolores vitae praesentium ea numquam asperiores illo voluptatum. Atque, asperiores! Optio, aspernatur quisquam ratione officia est, quam debitis, labore veritatis dolor culpa repellendus. Magnam accusamus amet explicabo aut!</p>
+        <h1>Panel 3</h1>
+        <p>This is panel 3</p>
       </div>
     </div>
   </body>
